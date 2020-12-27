@@ -1,90 +1,116 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Embedded-Tech</title>
-    <style> table, th { border: 1px solid black;} </style>
-    <link rel="icon" href="Hardware-Key.jpg" type="image/x-icon" />
-  </head>
-  <body>
-    <!-- This is the HEADER of my html page-->
-    <!-- stay tuned !!! -->
-    <!-- lets go!! -->
-    <header>
-      <nav>
-        <a href="/embedded/">EMBEDDED</a>
-        <a href="/technology/">TECHNOLOGY</a>
-        <a href="/hm/"> HOME</a>
-        <a href="/abt/"> ABOUT </a>
-        <a href="/wrk/"> WORK </a>
-        <a href="/rsm/"> RESUME </a>
-        <form>
-          <label for="fname">Search </label>
-          <input type="text" id="fname" name="fname" size="48" placeholder="Tap to search" >
-        </form>  
-      </nav> 
-    </header>
-        <!-- This is the MAIN of my html page-->
-        <!-- stay tuned !!! -->
-        <!-- lets go!! -->
-    <main>
-      <!-- This is a general description FIRST SECTION-->
-<section>
-  <h1>These are our main interest !</h1>
-<ul>
-  <li>Embedded Software</li>
-  <li>Embedded Compenent</li>
-  <li>Embedded Linux Environement</li>
-</ul>
-</section>
-<!-- This is a SECOND SECTION-->
-<section>
-  <p>An embedded system is a microprocessor-based computer hardware system with software that is designed to perform a dedicated function, either as an independent system or as a part of a large system. At the core is an integrated circuit designed to carry out computation for real-time operations.</p>
-  <p>Complexities range from a single microcontroller to a suite of processors with connected peripherals and networks; from no user interface to complex graphical user interfaces. The complexity of an embedded system varies significantly depending on the task for which it is designed.</p>
-  <p>Embedded system applications range from digital watches and microwaves to hybrid vehicles and avionics. As much as 98 percent of all microprocessors manufactured are used in embedded systems.</p>
-</section>
-<section>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/x3i7qRuJQfo" frameborder="0" allowfullscreen></iframe> </br>
-  <audio controls>
-    <source src="audio.mp4" type="audio/mpeg">
-    Your browser does not support the audio tag.
-  </audio>
-</section>
-<!-- This is a THIRD SECTION-->
-<section>
-<p> <b>ARE YOU Satisfited with my first issue?</b></p> 
-<form>
-  <label>Name:</label>
-  <input type="text" name="first name" placeholder="plz type your name" />
-  <br/>
-  <label>Number:</label>
-  <input type="number" name="number" value="00001111" />
-  <br/>
-  <label>Birth Date:</label>
-  <input type="date" name="birthday" />
-  <br/>
-  <select>
-    <option value="VD">Very Dissatisfited</option>
-    <option value="SD">Somewhat Dissatisfided</option>
-    <option value="NSND">Neither Satisfited Not Dissatisfited</option>
-    <option value="SS">Somewhat Satisfided</option>
-    <option value="VS">Very Satisfided</option>
-  </select>
-  <input type="submit" value="Submit"><br/>
-  <div> <a href="#TOP"><h1>Link Up Top</h1></a></div>
-  
-</section>
 
-    </main>
-    <footer>
-      <table>
-<tr>
-<th>About us</th>
-<th>Terms of use</th>
-<th>Helping</th>
-<th>Contact</th>
-</tr>
-  </table>
-        <div>© Copyright soooooon  2021 !!! All Rights Reserved.</div>
-        </footer>
-  </body>
+<head>
+  <title>Embedded-Tech</title>
+  <style>
+    /* these are some classes */
+    table, th {
+      border: 1px solid black;
+    }
+    ul.intro {
+      color: green;
+      text-align: justify;
+    }
+    p.important {
+      color: red;
+      resize: horizontal;
+    }
+  </style>
+  <link rel="icon" href="Hardware-Key.jpg" type="image/x-icon" />
+  <!-- This is for link to our css style -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <!-- This is the HEADER of my html page-->
+  <!-- stay tuned !!! -->
+  <!-- lets go!! -->
+  <header>
+    <nav>
+      <a href="/embedded/">EMBEDDED</a>
+      <a href="/technology/">TECHNOLOGY</a>
+      <a href="/hm/"> HOME</a>
+      <a href="/abt/"> ABOUT </a>
+      <a href="/wrk/"> WORK </a>
+      <a href="/rsm/"> RESUME </a>
+      <form>
+        <label for="fname">Search </label>
+        <input type="text" id="fname" name="fname" size="48" placeholder="Tap to search">
+      </form>
+    </nav>
+  </header>
+  <!-- This is the MAIN of my html page-->
+  <!-- stay tuned !!! -->
+  <!-- lets go!! -->
+  <main>
+    <!-- This is a general description FIRST SECTION-->
+    <section id="one">
+      <h1>These are our main interest !</h1>
+      <ul class="intro">
+        <li>Embedded Software</li>
+        <li>Embedded Compenent</li>
+        <li>Embedded Linux Environement</li>
+      </ul>
+    </section>
+    <!-- This is a SECOND SECTION-->
+    <section>
+      <p>An embedded system is a microprocessor-based computer hardware system with software that is designed to perform
+        a dedicated function, either as an independent system or as a part of a large system. At the core is an
+        integrated circuit designed to carry out computation for real-time operations.</p>
+      <p>Complexities range from a single microcontroller to a suite of processors with connected peripherals and
+        networks; from no user interface to complex graphical user interfaces. The complexity of an embedded system
+        varies significantly depending on the task for which it is designed.</p>
+      <p>Embedded system applications range from digital watches and microwaves to hybrid vehicles and avionics. As much
+        as 98 percent of all microprocessors manufactured are used in embedded systems.</p>
+    </section>
+    <section>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/x3i7qRuJQfo" frameborder="0"
+        allowfullscreen></iframe> </br>
+      <audio controls>
+        <source src="audio.mp4" type="audio/mpeg">
+        Your browser does not support the audio tag.
+      </audio>
+    </section>
+    <!-- This is a THIRD SECTION-->
+    <section>
+      <p class="important"> <b>ARE YOU Satisfited with my first issue?</b></p>
+      <form>
+        <label>Name:</label>
+        <input type="text" name="first name" placeholder="plz type your name" />
+        <br />
+        <label>Number:</label>
+        <input type="number" name="number" value="00001111" />
+        <br />
+        <label>Birth Date:</label>
+        <input type="date" name="birthday" />
+        <br />
+        <select>
+          <option value="VD">Very Dissatisfited</option>
+          <option value="SD">Somewhat Dissatisfided</option>
+          <option value="NSND">Neither Satisfited Not Dissatisfited</option>
+          <option value="SS">Somewhat Satisfided</option>
+          <option value="VS">Very Satisfided</option>
+        </select>
+        <input type="submit" value="Submit"><br />
+        <div> <a href="#TOP">
+            <h1>Link Up Top</h1>
+          </a></div>
+
+    </section>
+
+  </main>
+  <footer>
+    <table>
+      <tr>
+        <th>About us</th>
+        <th>Terms of use</th>
+        <th>Helping</th>
+        <th>Contact</th>
+      </tr>
+    </table>
+    <div>© Copyright soooooon 2021 !!! All Rights Reserved.</div>
+  </footer>
+</body>
+
 </html>

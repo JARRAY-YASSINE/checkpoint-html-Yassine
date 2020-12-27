@@ -1,0 +1,21 @@
+nav > a {
+  display: inline;
+}
+
+p {
+  font-family: Roboto, sans-serif;
+}
+
+#one {
+  font-family: Roboto, sans-serif;
+}
+button {
+  padding: 10px 15px;
+  width: 150px;
+  background: transparent;
+}
+form ~ label {
+  text-decoration: underline;
+  font-style: italic;
+  color: black;
+}
